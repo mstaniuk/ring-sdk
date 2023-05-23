@@ -1,7 +1,5 @@
-interface ClientOptions {
-  apiURL?: string;
-  apiKey?: string;
-}
+import {ClientOptions} from "./client";
+
 export const fetchData = async <T>(
   url: string,
   clientOptions: ClientOptions
