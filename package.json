@@ -1,7 +1,11 @@
 {
   "name": "ring-sdk",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "description": "Simple wrapper library for TheOneAPI",
+  "author": "Mateusz Staniuk <staniuk.mateusz@gmail.com> (https://github.com/mstaniuk)",
+  "engines": {
+    "node": ">=0.10"
+  },
   "type": "module",
   "exports": {
     ".": {
@@ -19,7 +23,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "build:watch": "tsc && vite build --watch"
+    "build:watch": "tsc && vite build --watch",
+    "test": "vitest"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "11.1.1",
@@ -29,6 +34,7 @@
     "tslib": "2.5.2",
     "typescript": "5.0.4",
     "vite": "4.3.8",
-    "vite-plugin-dts": "2.3.0"
+    "vite-plugin-dts": "2.3.0",
+    "vitest": "0.31.1"
   }
 }
